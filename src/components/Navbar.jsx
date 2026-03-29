@@ -1,20 +1,29 @@
-import { useTheme } from '../context/ThemeContext'
+import React from 'react';
 
-export default function Navbar() {
-  const { darkMode, toggleTheme } = useTheme()
-
+const Navbar = () => {
   return (
-    <nav className={`navbar ${darkMode ? 'dark' : ''}`}>
-      <h2 className="logo">Leonel Dev</h2>
-      <ul>
-        <li><a href="#hero">Inicio</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-      <button onClick={toggleTheme}>
-        {darkMode ? '☀️' : '🌙'}
-      </button>
+    <nav className="fixed w-full z-50 bg-black/95 backdrop-blur-sm border-b border-[#d4af37]/10 px-6 py-4 transition-all duration-300">
+      <div className="max-w-7xl mx-auto flex justify-between items-center">
+        {/* Animación de entrada en el Logo */}
+        <div className="text-2xl font-bold text-white tracking-tighter animate-fade-in-up">
+          JLN <span className="text-[#d4af37]">Software</span>
+        </div>
+        <div className="hidden md:flex space-x-8 text-sm font-medium animate-fade-in-up animation-delay-200">
+          {[ 'Nosotros', 'Servicios', 'Portafolio', 'Contacto'].map((item, index) => (
+            <a 
+              key={item}
+              href={`#${item.toLowerCase()}`} 
+              className="text-gray-300 hover:text-[#f1e0ac] transition-colors relative group"
+            >
+              {item}
+              {/* Animación de subrayado en hover */}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#d4af37] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          ))}
+        </div>
+      </div>
     </nav>
-  )
-}
+  );
+};
+
+export default Navbar;

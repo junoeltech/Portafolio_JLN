@@ -1,13 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
-import './styles/global.css'
-import { ThemeProvider } from './context/ThemeContext'
+import App from './App.jsx'
+import './styles/global.css' // Importante para Tailwind
+import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
-  </React.StrictMode>
+    <App />
+  </React.StrictMode>,
 )
