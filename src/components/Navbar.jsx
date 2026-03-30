@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Navbar = () => {
   return (
@@ -6,14 +6,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Animación de entrada en el Logo */}
         <div className="text-2xl font-bold text-white tracking-tighter animate-fade-in-up">
-          JLN <span className="text-[#d4af37]">Software</span>
+          JLN <span className="text-[#EEB56F]">Software</span>
         </div>
         <div className="hidden md:flex space-x-8 text-sm font-medium animate-fade-in-up animation-delay-200">
-          {[ 'Nosotros', 'Servicios', 'Portafolio', 'Contacto'].map((item, index) => (
-            <a 
+          {["Nosotros", "Servicios", "Portafolio", "Contacto"].map((item) => (
+            <a
               key={item}
-              href={`#${item.toLowerCase()}`} 
-              className="text-gray-300 hover:text-[#f1e0ac] transition-colors relative group"
+              href={`#${item.toLowerCase()}`}
+              className="text-gray-300 hover:text-[#EEB56F] transition-colors relative group"
             >
               {item}
               {/* Animación de subrayado en hover */}
