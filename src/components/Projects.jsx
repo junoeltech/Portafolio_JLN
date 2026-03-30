@@ -11,7 +11,7 @@ const Projects = () => {
       title: "ERP de Gestión Logística",
       category: "Software a Medida",
       thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
-      videoUrl: "/videos/erp-demo.mp4",
+      videoUrl: "/videos/contigo-fiscal.mp4",
       problem: "Procesos manuales lentos y pérdida de trazabilidad.",
       solution: "Dashboard administrativo sincronizado en tiempo real.",
       tags: ["React", "Node.js", "AWS"]
@@ -21,7 +21,7 @@ const Projects = () => {
       title: "SmartBot Inmobiliario",
       category: "Asistente Virtual",
       thumbnail: "https://images.unsplash.com/photo-1531746790731-6c087fecd05a?auto=format&fit=crop&q=80&w=1000",
-      videoUrl: "/videos/bot-demo.mp4",
+      videoUrl: "/videos/cafe-place.mp4",
       problem: "Saturación del equipo con leads no calificados.",
       solution: "Chatbot IA para calificación automática 24/7.",
       tags: ["OpenAI", "Python", "WhatsApp API"]
